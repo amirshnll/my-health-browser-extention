@@ -1,0 +1,28 @@
+aside {
+    background: #f7f4f5;
+    color: #261d21;
+    border-left: 1px solid #e5dfe2
+}
+
+.brand small {
+    color: #75686e
+}
+
+nav button {
+    color: #35272d
+}
+
+nav button:hover,
+nav .active {
+    background: #e64578;
+    color: #fff
+}
+
+.brand span {
+    background: #fff url('/icons/icon-64.png') center/30px 30px no-repeat !important;
+    border: 1px solid #e7dfe2
+}
+
+.popup-window .brand span {
+    background-size: 27px 27px !important
+}

@@ -1,0 +1,125 @@
+.calendar-picker {
+    position: fixed;
+    z-index: 9;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background: #fff;
+    padding: 6px 8px;
+    border: 1px solid #dce8e3;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #34554c;
+    box-shadow: 0 2px 9px #103f3814
+}
+
+.calendar-picker select {
+    border: 0;
+    background: transparent;
+    color: #18322e;
+    font: inherit;
+    outline: 0;
+    padding: 2px
+}
+
+.popup-window .calendar-picker {
+    top: 10px;
+    left: 10px
+}
+
+html[dir="rtl"] .calendar-picker {
+    left: auto;
+    right: 12px
+}
+
+.localized-date {
+    position: relative
+}
+
+.localized-date-value {
+    width: 100%;
+    min-height: 42px;
+    text-align: inherit;
+    border: 1px solid #cbd9d4;
+    border-radius: 8px;
+    padding: 10px;
+    font: inherit;
+    background: #fff;
+    cursor: pointer
+}
+
+.date-popover {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 5px);
+    inset-inline-start: 0;
+    width: 290px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #cbd9d4;
+    border-radius: 10px;
+    box-shadow: 0 9px 25px #103f3826
+}
+
+.date-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    margin-bottom: 8px
+}
+
+.date-nav button {
+    border: 0;
+    background: #e7f6f0;
+    color: #145e4d;
+    border-radius: 7px;
+    width: 31px;
+    height: 29px;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer
+}
+
+.date-nav strong {
+    font-size: 13px
+}
+
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    text-align: center
+}
+
+.date-grid span,
+.date-grid button {
+    min-height: 31px;
+    display: grid;
+    place-items: center;
+    font: inherit;
+    font-size: 12px
+}
+
+.date-grid button {
+    border: 0;
+    background: transparent;
+    border-radius: 7px;
+    cursor: pointer
+}
+
+.date-grid button:hover {
+    background: #e7f6f0
+}
+
+.date-grid button.selected {
+    background: #147d68;
+    color: #fff
+}
+
+.date-weekday {
+    color: #6d847d;
+    font-size: 11px !important
+}

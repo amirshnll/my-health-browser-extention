@@ -1,0 +1,31 @@
+.legal-content {
+    position: relative;
+    max-width: 650px !important;
+    line-height: 1.9
+}
+
+.legal-content section {
+    border-top: 1px solid #dce8e3;
+    padding: 14px 0
+}
+
+.legal-content section:first-of-type {
+    border-top: 0
+}
+
+.legal-content h3 {
+    font-size: 16px;
+    margin: 0 0 6px;
+    color: #1b5c4d
+}
+
+.legal-content p {
+    margin: 7px 0;
+    color: #465e56
+}
+
+.legal-content footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px
+}

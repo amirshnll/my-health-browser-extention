@@ -1,0 +1,13 @@
+.brand>div {
+    font-size: 20px
+}
+
+.brand small {
+    font-size: 11px;
+    line-height: 1.35;
+    margin-top: 3px
+}
+
+.popup-window .brand>div {
+    font-size: 17px
+}

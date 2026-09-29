@@ -1,0 +1,1 @@
+import './style.css'; document.getElementById('popup-root')!.innerHTML = '<main class="popup"><h2>دفتر سلامت</h2><p>اطلاعات شما فقط روی همین دستگاه نگه‌داری می‌شوند.</p><button class="primary" id="open">باز کردن داشبورد</button></main>'; document.getElementById('open')!.onclick = () => chrome.tabs.create({ url: chrome.runtime.getURL('index.html') });

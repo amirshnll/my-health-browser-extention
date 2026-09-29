@@ -1,0 +1,17 @@
+#root>.language-picker,
+#root>.calendar-picker {
+    display: none
+}
+
+html[dir="ltr"] aside nav button {
+    text-align: left
+}
+
+html[dir="rtl"] aside nav button {
+    text-align: right
+}
+
+.settings-content .language-picker,
+.settings-content .calendar-picker {
+    display: flex !important
+}

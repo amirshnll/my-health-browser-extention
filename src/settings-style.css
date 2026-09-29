@@ -1,0 +1,123 @@
+.settings-trigger,
+.open-tab-trigger {
+    position: fixed;
+    z-index: 9;
+    top: 12px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #dce8e3;
+    border-radius: 9px;
+    background: #fff;
+    color: #245348;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 9px #103f3814
+}
+
+.settings-trigger {
+    left: 12px
+}
+
+.open-tab-trigger {
+    left: 56px
+}
+
+.settings-modal .settings-content {
+    position: relative;
+    max-width: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 22px
+}
+
+.settings-content>h2,
+.settings-content>p,
+.settings-content>footer,
+.settings-content section:first-of-type,
+.settings-content section:last-of-type {
+    grid-column: 1/-1
+}
+
+.settings-content p {
+    color: #60756e;
+    line-height: 1.7;
+    margin-bottom: 8px
+}
+
+.settings-content section {
+    border-top: 1px solid #dce8e3;
+    padding: 13px 0
+}
+
+.settings-content h3 {
+    font-size: 15px;
+    margin: 0 0 9px
+}
+
+.settings-content section select {
+    display: block;
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 12px;
+    border: 1px solid #cbd9d4;
+    border-radius: 8px;
+    background: #fff;
+    color: #18322e;
+    font: inherit;
+    line-height: 1.4;
+    cursor: pointer;
+    outline: 0
+}
+
+.settings-content section select:focus {
+    border-color: #147d68;
+    box-shadow: 0 0 0 3px #147d6820
+}
+
+.settings-content .calendar-picker,
+.settings-content .language-picker {
+    position: static;
+    display: flex;
+    width: max-content;
+    box-shadow: none;
+    background: #f5f8f6
+}
+
+.settings-content .calendar-picker label,
+.settings-content .language-picker label {
+    font-weight: 700
+}
+
+.open-tab {
+    border: 0;
+    border-radius: 8px;
+    background: #147d68;
+    color: #fff;
+    padding: 9px 13px;
+    font: inherit;
+    cursor: pointer
+}
+
+@media(max-width:560px) {
+    .settings-modal .settings-content {
+        grid-template-columns: 1fr
+    }
+
+    .settings-content>h2,
+    .settings-content>p,
+    .settings-content>footer,
+    .settings-content section:first-of-type,
+    .settings-content section:last-of-type {
+        grid-column: auto
+    }
+}
+
+html[dir="ltr"] .settings-trigger {
+    left: auto;
+    right: 12px
+}
+
+html[dir="ltr"] .open-tab-trigger {
+    left: auto;
+    right: 56px
+}

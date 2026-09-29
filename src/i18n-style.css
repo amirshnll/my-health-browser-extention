@@ -1,0 +1,30 @@
+.language-picker {
+    position: fixed;
+    z-index: 10;
+    top: 50px;
+    left: 12px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    background: #fff;
+    padding: 6px 8px;
+    border: 1px solid #dce8e3;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #34554c;
+    box-shadow: 0 2px 9px #103f3814
+}
+
+.language-picker select {
+    border: 0;
+    background: transparent;
+    color: #18322e;
+    font: inherit;
+    outline: 0;
+    padding: 2px
+}
+
+html[dir="rtl"] .language-picker {
+    left: auto;
+    right: 12px
+}

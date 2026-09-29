@@ -1,0 +1,20 @@
+.inline-checkbox {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    align-self: end;
+    min-height: 42px;
+    cursor: pointer;
+    color: #34554c
+}
+
+.inline-checkbox input {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    accent-color: #e64578
+}
+
+.inline-checkbox span {
+    white-space: nowrap
+}

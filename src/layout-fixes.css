@@ -1,0 +1,22 @@
+.primary,
+.button,
+.open-tab {
+    white-space: nowrap
+}
+
+.entries>article>div:first-child {
+    flex: 1;
+    min-width: 0
+}
+
+.entries>article>.row {
+    flex: none
+}
+
+.entries>article p {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}

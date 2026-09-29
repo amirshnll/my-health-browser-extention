@@ -1,0 +1,170 @@
+.measurement-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    direction: ltr
+}
+
+.measurement-input input {
+    width: 100%;
+    padding-right: 64px !important;
+    text-align: left
+}
+
+.measurement-unit {
+    position: absolute;
+    right: 10px;
+    color: #637570;
+    font-size: 12px;
+    font-weight: 700;
+    pointer-events: none
+}
+
+.unit-settings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+
+.unit-settings label {
+    display: grid;
+    gap: 6px;
+    color: #34554c;
+    font-size: 13px
+}
+
+.metric-with-unit {
+    display: inline-flex !important;
+    align-items: baseline;
+    gap: 5px;
+    direction: ltr
+}
+
+.metric-with-unit small {
+    font-size: 12px;
+    color: inherit
+}
+
+.health-profile-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important
+}
+
+.health-profile-form>label {
+    min-width: 0
+}
+
+.health-profile-form>.primary {
+    grid-column: 1/-1;
+    justify-self: start
+}
+
+@media(max-width:480px) {
+    .health-profile-form {
+        grid-template-columns: 1fr !important
+    }
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.profile-photo-preview {
+    width: 76px;
+    height: 76px;
+    flex: 0 0 76px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: #f9e7ee;
+    color: #c82d63;
+    font-size: 28px;
+    font-weight: 800
+}
+
+.profile-photo-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.profile-photo>div:last-child {
+    display: grid;
+    gap: 8px
+}
+
+.schedule-input,
+.temperature-input {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, .4fr);
+    gap: 8px
+}
+
+.schedule-input {
+    grid-template-columns: minmax(0, 1fr) minmax(110px, .55fr)
+}
+
+.schedule-input input,
+.schedule-input select,
+.temperature-input input,
+.temperature-input select {
+    width: 100%
+}
+
+@media(max-width:480px) {
+
+    .schedule-input,
+    .temperature-input {
+        grid-template-columns: 1fr
+    }
+}
+
+.temperature-input {
+    direction: ltr;
+    grid-template-columns: minmax(85px, 1fr) minmax(75px, .7fr) minmax(85px, .7fr)
+}
+
+.temperature-input select {
+    direction: ltr
+}
+
+@media(max-width:480px) {
+    .temperature-input {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .temperature-input select:last-child {
+        grid-column: 1/-1
+    }
+}
+
+.blood-pressure-input {
+    direction: ltr;
+    display: grid;
+    grid-template-columns: minmax(75px, 1fr) auto minmax(75px, 1fr) auto;
+    align-items: center;
+    gap: 8px
+}
+
+.blood-pressure-input select {
+    direction: ltr;
+    width: 100%
+}
+
+.blood-pressure-input strong {
+    color: #637570;
+    font-size: 12px;
+    white-space: nowrap
+}
+
+@media(max-width:480px) {
+    .blood-pressure-input {
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr)
+    }
+
+    .blood-pressure-input strong {
+        grid-column: 1/-1
+    }
+}

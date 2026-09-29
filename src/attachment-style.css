@@ -1,0 +1,128 @@
+.attachment-picker {
+    align-content: start
+}
+
+.selected-files {
+    display: grid;
+    gap: 2px;
+    max-width: 100%;
+    color: #637570;
+    line-height: 1.5;
+    overflow-wrap: anywhere
+}
+
+.selected-files span {
+    display: block
+}
+
+.entry-viewer {
+    max-width: 650px
+}
+
+.entry-viewer>h2,
+.entry-viewer>.viewer-heading,
+.entry-viewer>dl,
+.entry-viewer>section,
+.entry-viewer>footer {
+    grid-column: 1/-1
+}
+
+.viewer-heading {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eadde2
+}
+
+.viewer-heading h3 {
+    margin: 0 0 5px
+}
+
+.entry-viewer dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0
+}
+
+.entry-viewer dl div {
+    min-width: 0;
+    padding: 11px;
+    border-radius: 9px;
+    background: #fff7fa
+}
+
+.entry-viewer dt {
+    color: #637570;
+    font-size: 12px
+}
+
+.entry-viewer dd {
+    margin: 4px 0 0;
+    font-weight: 700;
+    overflow-wrap: anywhere
+}
+
+.viewer-notes h3,
+.viewer-attachments h3 {
+    margin: 0 0 7px;
+    font-size: 14px
+}
+
+.viewer-notes p,
+.viewer-attachments p {
+    margin: 0;
+    color: #566b65;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere
+}
+
+.viewer-attachments>div {
+    display: grid;
+    gap: 7px
+}
+
+.attachment-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    padding: 7px 8px 7px 10px;
+    border: 1px solid #f0d9e2;
+    border-radius: 8px
+}
+
+.viewer-attachments .attachment-download {
+    min-width: 0;
+    flex: 1;
+    color: #b51f55;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.viewer-attachments .attachment-open {
+    flex: none;
+    padding: 6px 9px;
+    border-radius: 7px;
+    background: #fff0f5;
+    color: #9f174a;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+@media(max-width:560px) {
+    .entry-viewer dl {
+        grid-template-columns: 1fr
+    }
+
+    .attachment-item {
+        align-items: stretch;
+        flex-direction: column
+    }
+
+    .viewer-attachments .attachment-open {
+        text-align: center
+    }
+}

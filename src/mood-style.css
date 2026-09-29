@@ -1,0 +1,54 @@
+.mood-quick {
+    margin-bottom: 18px
+}
+
+.mood-quick h2 {
+    font-size: 18px
+}
+
+.mood-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.mood-button {
+    display: grid;
+    gap: 5px;
+    place-items: center;
+    flex: 1;
+    border: 1px solid #d8e8e2;
+    border-radius: 12px;
+    background: #f9fcfa;
+    padding: 10px 4px;
+    cursor: pointer;
+    font: inherit
+}
+
+.mood-button:hover {
+    background: #e4f5ef;
+    border-color: #78cbb3
+}
+
+.mood-button span {
+    font-size: 27px
+}
+
+.mood-button small {
+    color: #47685f;
+    font-size: 11px
+}
+
+@media(max-width:450px) {
+    .mood-buttons {
+        gap: 4px
+    }
+
+    .mood-button {
+        padding: 8px 2px
+    }
+
+    .mood-button span {
+        font-size: 23px
+    }
+}

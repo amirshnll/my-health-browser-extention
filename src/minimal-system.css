@@ -1,0 +1,311 @@
+:root {
+    --ink: #1d1b1c;
+    --muted: #6e686b;
+    --line: #e6e1e3;
+    --surface: #fff;
+    --canvas: #faf9f9;
+    --accent: #e64578;
+    --accent-dark: #cb2f61;
+    --soft: #fff1f5;
+    color: var(--ink);
+    background: var(--canvas)
+}
+
+body {
+    background: var(--canvas)
+}
+
+.app {
+    min-height: 100vh
+}
+
+aside {
+    background: #1b191a;
+    border: 0;
+    padding: 18px 12px
+}
+
+main {
+    padding: 30px 5%;
+    background: var(--canvas)
+}
+
+.brand {
+    padding: 8px 10px 20px;
+    gap: 9px;
+    font-size: 18px
+}
+
+.brand span {
+    border-radius: 8px;
+    box-shadow: none;
+    background: var(--accent)
+}
+
+nav {
+    gap: 2px
+}
+
+nav button {
+    border-radius: 6px;
+    padding: 9px 10px;
+    font-size: 13px
+}
+
+nav button:hover,
+nav .active {
+    background: #312d2f;
+    box-shadow: none;
+    color: #fff
+}
+
+.popup-window .app {
+    min-height: 580px
+}
+
+.popup-window aside {
+    padding: 14px 9px
+}
+
+.popup-window nav button {
+    font-size: 12px
+}
+
+h1 {
+    font-size: 26px;
+    letter-spacing: -.02em
+}
+
+header {
+    margin-bottom: 22px
+}
+
+header p {
+    font-size: 13px
+}
+
+.primary,
+.button,
+.danger,
+.open-tab {
+    border-radius: 6px;
+    box-shadow: none;
+    padding: 9px 13px
+}
+
+.primary,
+.button,
+.open-tab {
+    background: var(--accent)
+}
+
+.primary:hover,
+.button:hover,
+.open-tab:hover {
+    background: var(--accent-dark)
+}
+
+.danger {
+    background: #a9324f
+}
+
+.cards {
+    gap: 12px
+}
+
+.card,
+.panel,
+article,
+.empty {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: none;
+    background: var(--surface)
+}
+
+.card {
+    padding: 16px
+}
+
+.card strong {
+    font-size: 24px;
+    color: var(--ink)
+}
+
+.card span {
+    font-size: 12px
+}
+
+.panel {
+    padding: 17px
+}
+
+.search,
+input,
+textarea {
+    border-color: var(--line);
+    border-radius: 6px;
+    background: #fff;
+    padding: 9px
+}
+
+.search:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #ffd2e0;
+    border-color: #f3a5bd
+}
+
+.entries {
+    gap: 8px
+}
+
+article {
+    padding: 15px
+}
+
+article h3 {
+    font-size: 15px
+}
+
+.tag {
+    border-radius: 4px;
+    background: var(--soft);
+    color: #99314f
+}
+
+.mood-quick {
+    margin-bottom: 12px
+}
+
+.mood-quick h2 {
+    font-size: 16px
+}
+
+.mood-button {
+    border-radius: 7px;
+    border-color: var(--line);
+    background: #fff
+}
+
+.mood-button:hover {
+    background: var(--soft);
+    border-color: #f4a6bf
+}
+
+.mood-button span {
+    font-size: 25px
+}
+
+.water-tracker {
+    border-radius: 8px
+}
+
+.water-copy strong {
+    color: var(--ink);
+    font-size: 23px
+}
+
+.water-actions button {
+    border-radius: 6px;
+    background: #fff;
+    border-color: var(--line);
+    color: var(--ink)
+}
+
+.water-actions button:hover {
+    background: var(--soft)
+}
+
+.bottle-cap {
+    background: var(--accent);
+    border-radius: 5px 5px 1px 1px
+}
+
+.bottle-body {
+    border-color: #eab0c0;
+    border-radius: 10px 10px 18px 18px
+}
+
+.water-fill {
+    background: #e76088
+}
+
+.settings-trigger {
+    border-radius: 6px;
+    box-shadow: none;
+    color: var(--ink);
+    border-color: var(--line)
+}
+
+.settings-trigger:hover {
+    background: var(--soft)
+}
+
+.modal {
+    background: #1714158c
+}
+
+.modal>div {
+    border-radius: 8px;
+    box-shadow: 0 18px 50px #0002
+}
+
+.modal-close {
+    border-radius: 6px;
+    background: #f6f4f5;
+    color: var(--ink)
+}
+
+.modal-close:hover {
+    background: #ece7e9
+}
+
+.choice-row button {
+    border-radius: 5px
+}
+
+.choice-row button:hover,
+.choice-row button.selected {
+    background: var(--accent);
+    border-color: var(--accent)
+}
+
+.app-info {
+    color: #888083
+}
+
+.app-info a {
+    color: #7a3150
+}
+
+.notice {
+    border-radius: 6px;
+    background: var(--soft);
+    border-color: #f4c4d2;
+    color: #882b49
+}
+
+.legal-content h3 {
+    color: var(--ink)
+}
+
+.form select,
+.dialog select {
+    border-color: var(--line);
+    border-radius: 6px;
+    background: #fff;
+    padding: 9px
+}
+
+.form select:focus,
+.dialog select:focus {
+    outline: 2px solid #ffd2e0;
+    border-color: #f3a5bd
+}
+
+.notice {
+    background: #e5f8f1;
+    border-color: #a9dfcf;
+    color: #145e4d
+}

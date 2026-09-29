@@ -1,0 +1,28 @@
+.choice-field {
+    display: grid;
+    gap: 6px
+}
+
+.choice-row {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap
+}
+
+.choice-row button {
+    width: 31px;
+    height: 31px;
+    border: 1px solid #cbd9d4;
+    border-radius: 7px;
+    background: #fff;
+    color: #34554c;
+    font: inherit;
+    cursor: pointer
+}
+
+.choice-row button:hover,
+.choice-row button.selected {
+    background: #147d68;
+    border-color: #147d68;
+    color: #fff
+}

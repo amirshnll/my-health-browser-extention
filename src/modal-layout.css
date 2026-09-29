@@ -1,0 +1,13 @@
+.modal {
+    z-index: 50
+}
+
+.popup-window .dialog {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.popup-window .dialog>.full,
+.popup-window .dialog>h2,
+.popup-window .dialog>footer {
+    grid-column: 1/-1
+}

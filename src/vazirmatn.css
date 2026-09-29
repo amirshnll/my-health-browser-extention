@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Vazirmatn Local';
+    src: url('/fonts/Vazirmatn-wght.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap
+}
+
+html[lang="fa"] body,
+html[lang="ar"] body {
+    font-family: 'Vazirmatn Local', Tahoma, Arial, sans-serif
+}
+
+html[lang="fa"] input,
+html[lang="fa"] textarea,
+html[lang="fa"] button,
+html[lang="fa"] select,
+html[lang="ar"] input,
+html[lang="ar"] textarea,
+html[lang="ar"] button,
+html[lang="ar"] select {
+    font-family: 'Vazirmatn Local', Tahoma, Arial, sans-serif
+}

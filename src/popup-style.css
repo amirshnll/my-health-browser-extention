@@ -1,0 +1,271 @@
+.popup-window {
+    width: 720px;
+    height: 580px;
+    min-height: 580px;
+    max-height: 580px;
+    overflow: hidden
+}
+
+.popup-window .app {
+    display: flex;
+    height: 580px;
+    min-height: 0;
+    overflow: hidden
+}
+
+.popup-window aside {
+    width: 205px;
+    height: 580px;
+    padding: 10px 8px;
+    overflow: hidden
+}
+
+.popup-window .brand {
+    gap: 6px;
+    padding: 3px 4px 9px;
+    font-size: 14px
+}
+
+.popup-window .brand span {
+    padding: 3px 7px;
+    font-size: 18px
+}
+
+.popup-window .brand small {
+    margin-top: 1px;
+    font-size: 9px;
+    line-height: 1.25
+}
+
+.popup-window nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
+    overflow: visible;
+    white-space: normal
+}
+
+.popup-window nav button {
+    min-width: 0;
+    min-height: 34px;
+    padding: 4px 5px;
+    overflow: hidden;
+    font-size: 9.5px;
+    line-height: 1.2;
+    text-align: start
+}
+
+.popup-window main {
+    width: calc(100% - 205px);
+    height: 580px;
+    padding: 14px 3% 52px;
+    overflow: auto
+}
+
+.popup-window .view-overview main {
+    overflow: hidden
+}
+
+.popup-window .view-overview header {
+    margin-bottom: 8px
+}
+
+.popup-window .view-overview h1 {
+    font-size: 22px
+}
+
+.popup-window .view-overview header p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    line-height: 1.25
+}
+
+.popup-window .dashboard {
+    display: grid;
+    gap: 7px
+}
+
+.popup-window .dashboard>.panel,
+.popup-window .dashboard>.cards {
+    margin: 0
+}
+
+.popup-window .dashboard .bmi-card {
+    gap: 12px;
+    padding: 8px 10px
+}
+
+.popup-window .dashboard .bmi-summary {
+    min-width: 115px
+}
+
+.popup-window .dashboard .bmi-summary>span,
+.popup-window .dashboard .bmi-summary small {
+    font-size: 10px
+}
+
+.popup-window .dashboard .bmi-summary strong {
+    font-size: 25px
+}
+
+.popup-window .dashboard .bmi-scale {
+    height: 9px
+}
+
+.popup-window .dashboard .bmi-marker {
+    top: -5px;
+    height: 20px
+}
+
+.popup-window .dashboard .bmi-marker:before {
+    width: 9px;
+    height: 9px
+}
+
+.popup-window .dashboard .bmi-labels {
+    margin-top: 5px;
+    font-size: 8px
+}
+
+.popup-window .dashboard .water-tracker {
+    gap: 10px;
+    padding: 9px 11px
+}
+
+.popup-window .dashboard .water-copy h2 {
+    margin: 0 0 1px;
+    font-size: 14px
+}
+
+.popup-window .dashboard .water-copy strong {
+    font-size: 20px
+}
+
+.popup-window .dashboard .water-goal {
+    gap: 5px;
+    margin: 3px 0 5px;
+    font-size: 10px
+}
+
+.popup-window .dashboard .water-goal input {
+    width: 82px;
+    padding: 4px 6px;
+    font-size: 11px
+}
+
+.popup-window .dashboard .water-goal small {
+    font-size: 9px
+}
+
+.popup-window .dashboard .water-actions {
+    gap: 4px;
+    flex-wrap: nowrap
+}
+
+.popup-window .dashboard .water-actions button {
+    padding: 5px 7px;
+    font-size: 10px
+}
+
+.popup-window .dashboard .bottle {
+    width: 58px;
+    padding-top: 7px
+}
+
+.popup-window .dashboard .bottle-cap {
+    width: 27px;
+    height: 9px
+}
+
+.popup-window .dashboard .bottle-body {
+    height: 84px;
+    border-width: 3px
+}
+
+.popup-window .dashboard .bottle-body span {
+    font-size: 11px
+}
+
+.popup-window .dashboard .cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px
+}
+
+.popup-window .dashboard .card {
+    min-width: 0;
+    padding: 7px
+}
+
+.popup-window .dashboard .card strong {
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1.15;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.popup-window .dashboard .card span {
+    display: block;
+    overflow: hidden;
+    font-size: 9px;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.popup-window .dashboard .mood-quick {
+    padding: 8px 10px
+}
+
+.popup-window .dashboard .mood-quick h2 {
+    margin: 0 0 5px;
+    font-size: 13px
+}
+
+.popup-window .dashboard .mood-buttons {
+    gap: 4px
+}
+
+.popup-window .dashboard .mood-button {
+    gap: 1px;
+    padding: 3px 2px
+}
+
+.popup-window .dashboard .mood-button span {
+    font-size: 18px;
+    line-height: 1.1
+}
+
+.popup-window .dashboard .mood-button small {
+    font-size: 8px
+}
+
+.popup-window .dashboard .recent-activity {
+    padding: 8px 10px
+}
+
+.popup-window .dashboard .recent-activity h2 {
+    margin: 0 0 3px;
+    font-size: 13px
+}
+
+.popup-window .dashboard .recent-activity p {
+    margin: 0;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.popup-window .dashboard .recent-activity p small {
+    font-size: 8px
+}
+
+.popup-window .app-info {
+    inset-inline-start: 205px
+}
+
+.popup-window .primary {
+    margin-top: 0
+}
