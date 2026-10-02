@@ -66,6 +66,10 @@ To build and package installable ZIP archives for both browsers, run:
 
 The archives are written to `outputs/my-health-chrome.zip` and `outputs/my-health-firefox.zip`.
 
+## Download
+
+[Chrome](#) - [Firefox](https://addons.mozilla.org/firefox/addon/my-health/)
+
 ## License
 
 My Health is licensed under the MIT License. See the `LICENSE` file for the full license text.
